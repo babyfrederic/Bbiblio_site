@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'AGaramondPro';
+    src:
+        local('AGaramondPro-Regular'),
+
+        url('../font/AGaramondPro-Regular.woff')
+        format('woff'),
+    
+        url('../font/AGaramondPro-Regular.otf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'AGaramondPro';
+    font-style: italic;
+    src:
+        local('AGaramondPro-Bold'),
+
+        url('../font/AGaramondPro-Bold.woff')
+        format('woff'),
+    
+        url('../font/AGaramondPro-Bold.otf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'AGaramondPro';
+    font-style: italic;
+    src:
+        local('AGaramondPro-Italic'),
+
+        url('../font/AGaramondPro-Italic.woff')
+        format('woff'),
+    
+        url('../font/AGaramondPro-Italic.otf')
+        format('truetype');
+}
+@font-face {
+    font-family: 'AGaramondPro';
+    font-style: italic;
+    font-weight: bold;
+    src:
+        local('AGaramondPro-BoldItalic'),
+
+        url('../font/AGaramondPro-BoldItalic.woff')
+        format('woff'),
+    
+        url('../font/AGaramondPro-BoldItalic.otf')
+        format('truetype');
+}
+
+:root{
+    --bleu : #18273D ;
+    --beige : #F7F4EC ;
+    --brown : #bfa959;
+    --soustitrecolor :#999 ;
+    --textcolor :#333 ;
+    --hovernavcolor :#333 ;
+    --hoverbuttoncolor :#bfa959 ;
+}
+
+html{
+    font-family: 'AGaramondPro';
+
+
+}
+
+body{
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--hovernavcolor);
+
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    margin: 1rem 2rem;
+    background-color: #fff;
+
+}
+// .button--primary
+
+// .card
+//  .aside
+// .header
+// .header__title1
+// .aside
+// .aside__titre
+#dark:checked ~ .main{
+    color: $unexisting;
+    background-color: var(--hovernavcolor);
+    color: #fff;
+}
